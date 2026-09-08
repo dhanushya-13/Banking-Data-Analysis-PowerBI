@@ -1,0 +1,201 @@
+﻿DAX MEASURES AND COLUMNS
+Customer Analysis 
+Total Customers =
+DISTINCTCOUNT(customers[customer_id])
+
+
+Average Annual Income =
+AVERAGE(customers[annual_income])
+
+
+Average Credit Score =
+AVERAGE(customers[credit_score])
+
+
+Account Analysis 
+Total Accounts =
+DISTINCTCOUNT(accounts[account_id])
+
+
+Total Account Balance =
+SUM(accounts[balance])
+
+
+Average Account Balance =
+AVERAGE(accounts[balance])
+
+
+Active Accounts =
+CALCULATE(
+    DISTINCTCOUNT(accounts[account_id]),
+    accounts[status] = "Active"
+)
+Transaction Analysis
+Total Transactions =
+COUNT(transactions[transaction_id])
+
+
+
+
+Total Transaction Value =
+SUM(transactions[amount])
+
+
+Average Transaction Amount =
+AVERAGE(transactions[amount])
+
+
+Loan and Risk Analysis
+
+
+Total Loans =
+DISTINCTCOUNT(loans[loan_id])
+
+
+Total Loan Amount =
+SUM(loans[loan_amount])
+
+
+Average Loan Amount =
+AVERAGE(loans[loan_amount])
+
+
+Default Rate =
+DIVIDE(
+    CALCULATE(
+        DISTINCTCOUNT(loans[loan_id]),
+        loans[status] = "Default"
+    ),
+    [Total Loans],
+    0
+)
+
+
+Branch Analysis 
+Total Branches =
+DISTINCTCOUNT(branches[branch_id])
+
+
+
+
+Total Branch Customers =
+DISTINCTCOUNT(customers[customer_id])
+
+
+Total Branch Balance =
+SUM(accounts[balance])
+
+
+Branch Transactions Display =
+FORMAT(
+    DIVIDE([Branch Transactions], 1000),
+    "0.00"
+) & "K"
+
+
+Card Analysis
+Total Cards =
+DISTINCTCOUNT(cards[card_id])
+
+
+Active Cards =
+CALCULATE(
+    DISTINCTCOUNT(cards[card_id]),
+    cards[status] = "Active"
+)
+
+
+Total Card Transaction Value =
+SUM(card_transactions[amount])
+
+
+Fraud Transactions =
+SUM(card_transactions[is_fraud])
+
+
+Fraud % =
+DIVIDE(
+    [Fraud Transactions],
+    COUNT(card_transactions[card_txn_id]),
+    0
+)
+
+
+Card Transaction Count =
+VAR CustomerID =
+    SELECTEDVALUE(customers[customer_id])
+RETURN
+    CALCULATE(
+        COUNT(card_transactions[card_txn_id]),
+        REMOVEFILTERS(accounts),
+        FILTER(
+            ALL(cards),
+            cards[customer_id] = CustomerID
+        )
+    )
+
+
+
+
+Support Analysis 
+Total Support Tickets =
+COUNT(support_tickets[ticket_id])
+
+
+Average Resolution Days =
+AVERAGEX(
+    FILTER(
+        support_tickets,
+        NOT ISBLANK(support_tickets[date_resolved])
+    ),
+    DATEDIFF(
+        support_tickets[date_opened],
+        support_tickets[date_resolved],
+        DAY
+    )
+)
+
+
+Average Satisfaction Score =
+AVERAGE(support_tickets[satisfaction_score])
+
+
+Calculated Columns 
+Credit Segment =
+SWITCH(
+    TRUE(),
+    [credit_score] < 580, "Poor",
+    [credit_score] < 700, "Good",
+    [credit_score] < 800, "Fair",
+    "Excellent"
+)
+
+
+Fraud Status =
+IF(
+    card_transactions[is_fraud] = 1,
+    "Fraud",
+    "Legitimate"
+)
+
+
+Transaction Year =
+YEAR(card_transactions[txn_date])
+
+
+Support Year =
+YEAR(support_tickets[date_opened])
+
+
+
+
+
+
+
+
+Display Formatting 
+Avg Balance Display =
+FORMAT(
+    DIVIDE([Average Account Balance], 1000),
+    "0.00"
+) & "K"
