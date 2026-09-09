@@ -220,7 +220,7 @@ An interactive **Power BI dashboard** was developed to analyse banking performan
 Click the links below to view the individual dashboard screenshots.
 | Dashboard            | Screenshot                                                 |
 | -------------------- | ---------------------------------------------------------- |
-| Executive Dashboard  | [View Screenshot](Screenshots/01_Executive_Dashboard.png)  |
+| Executive Dashboard  | [View Screenshot](Screenshots/1_Analysis%20-%20Executive%20page.PNG ) |
 | Customer Analysis    | [View Screenshot](Screenshots/02_Customer_Analysis.png)    |
 | Account Analysis     | [View Screenshot](Screenshots/03_Account_Analysis.png)     |
 | Transaction Analysis | [View Screenshot](Screenshots/04_Transaction_Analysis.png) |
