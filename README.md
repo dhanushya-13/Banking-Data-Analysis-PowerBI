@@ -4,8 +4,8 @@ An end-to-end banking data analysis and Business Intelligence project using SQL 
 
 This project demonstrates how a large-scale relational banking dataset can be transformed into meaningful business insights using SQL analysis, data validation, Power BI data modelling, DAX calculations and interactive dashboards.
 
-| 📚 Project Documentation | [View Project Documentation](Documentation/Banking_Project_Report.pdf) |
-| 📈 Power BI Dashboard    | [Download Power BI Dashboard (.pbix)](https://drive.google.com/file/d/12sh7geLjgABdrZXMKs-guiVfElVaQclJ/view?usp=sharing)) 
+#### 📚 Project Documentation | [View Project Documentation](Banking_Data_Analysis_PowerBI_Project_Documentation.pdf) |
+#### 📈 Power BI Dashboard    | [Download Power BI Dashboard (.pbix)](https://drive.google.com/file/d/12sh7geLjgABdrZXMKs-guiVfElVaQclJ/view?usp=sharing)) 
 ---
 
 ## 📌 Overview
@@ -345,5 +345,5 @@ Data Science | SQL | Power BI | DAX | Data Analytics
 | ------------------------ | ---------------------------------------------------------------------- |
 | 🧮 SQL Queries           | [View SQL Queries](SQL/banking%20analysis%20project%20Query.sql)       |
 | 📊 DAX Measures          | [View DAX Measures](DAX/Banking%20analysis%20DAX%20measures.txt)       |
-| 📚 Project Documentation | [View Project Documentation](Documentation/Banking_Project_Report.pdf) |
+| 📚 Project Documentation | [View Project Documentation](Banking_Data_Analysis_PowerBI_Project_Documentation.pdf) |
 | 📈 Power BI Dashboard    | [Download Power BI Dashboard (.pbix)](https://drive.google.com/file/d/12sh7geLjgABdrZXMKs-guiVfElVaQclJ/view?usp=sharing))          |
