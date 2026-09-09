@@ -318,7 +318,7 @@ Therefore, the year 2026 contains only January–June data and should not be int
 
 The complete Power BI .pbix file is hosted externally because the file size exceeds GitHub's standard repository file limit.
 
-👉 [Download Power BI Dashboard.(pbix)]
+👉 [Download Power BI Dashboard.(pbix)](https://drive.google.com/file/d/12sh7geLjgABdrZXMKs-guiVfElVaQclJ/view?usp=sharing)
 
 ## 🏆 Project Outcomes
 
@@ -344,4 +344,4 @@ Data Science | SQL | Power BI | DAX | Data Analytics
 | 🧮 SQL Queries           | [View SQL Queries](SQL/banking%20analysis%20project%20Query.sql)       |
 | 📊 DAX Measures          | [View DAX Measures](DAX/Banking%20analysis%20DAX%20measures.txt)       |
 | 📚 Project Documentation | [View Project Documentation](Documentation/Banking_Project_Report.pdf) |
-| 📈 Power BI Dashboard    | [Download Power BI Dashboard (.pbix)](YOUR_GOOGLE_DRIVE_LINK)          |
+| 📈 Power BI Dashboard    | [Download Power BI Dashboard (.pbix)](https://drive.google.com/file/d/12sh7geLjgABdrZXMKs-guiVfElVaQclJ/view?usp=sharing))          |
