@@ -221,13 +221,13 @@ Click the links below to view the individual dashboard screenshots.
 | Dashboard            | Screenshot                                                 |
 | -------------------- | ---------------------------------------------------------- |
 | Executive Dashboard  | [View Screenshot](Screenshots/1_Analysis%20-%20Executive%20page.PNG ) |
-| Customer Analysis    | [View Screenshot](Screenshots/02_Customer_Analysis.png)    |
-| Account Analysis     | [View Screenshot](Screenshots/03_Account_Analysis.png)     |
-| Transaction Analysis | [View Screenshot](Screenshots/04_Transaction_Analysis.png) |
-| Loan & Risk Analysis | [View Screenshot](Screenshots/05_Loan_Risk_Analysis.png)   |
-| Branch Analysis      | [View Screenshot](Screenshots/06_Branch_Analysis.png)      |
-| Card Analysis        | [View Screenshot](Screenshots/07_Card_Analysis.png)        |
-| Support Analysis     | [View Screenshot](Screenshots/08_Support_Analysis.png)     |
+| Customer Analysis    | [View Screenshot](Screenshots/2_Analysis%20-%20customer%20page.PNG )  |
+| Account Analysis     | [View Screenshot](Screenshots/3_Analysis%20-%20%20accounts%20page.PNG ) |
+| Transaction Analysis | [View Screenshot](Screenshots/4_Analysis%20-%20Transaction%20page.PNG ) |
+| Loan & Risk Analysis | [View Screenshot](Screenshots/5_Analysis%20-Loan%20%20%26%20Risk%20page.PNG)   |
+| Branch Analysis      | [View Screenshot](Screenshots/6_Analysis%20-%20Branch%20page.PNG )      |
+| Card Analysis        | [View Screenshot]( Screenshots/7_Analysis%20-Card%20page.PNG)        |
+| Support Analysis     | [View Screenshot](  Screenshots/8_Analysis%20-support%20page.PNG)     |
 
 ## 🔑 Key Findings
 ### 👥 Customer Insights
