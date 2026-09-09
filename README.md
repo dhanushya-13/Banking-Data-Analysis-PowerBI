@@ -91,6 +91,29 @@ The database consists of multiple interconnected tables representing different b
 | **GitHub** | Project version control and portfolio presentation |
 
 ---
+## 🗄 Database Structure
+
+The banking database follows a relational structure in which multiple tables are connected through primary keys and foreign keys.
+
+The database contains interconnected entities representing customers, accounts, branches, transactions, loans, loan payments, cards, card transactions, support tickets and employees.
+
+### Main relationship
+Customers
+   │
+   ├── Accounts
+   │      ├── Transactions
+   │      └── Cards
+   │             └── Card Transactions
+   │
+   ├── Loans
+   │      └── Loan Payments
+   │
+   └── Support Tickets
+
+Branches
+   ├── Accounts
+   ├── Loans
+   └── Employees
 
 ## Business Problem Areas
 
@@ -168,7 +191,7 @@ Transaction Year
 Support Year
 
 ### 📄 Complete DAX Measures
-👉 View DAX Measures
+👉 [View DAX Measures](DAX/Banking%20analysis%20DAX%20measures.txt)
 
 ## 📈 Power BI Dashboard
 
@@ -295,7 +318,7 @@ Therefore, the year 2026 contains only January–June data and should not be int
 
 The complete Power BI .pbix file is hosted externally because the file size exceeds GitHub's standard repository file limit.
 
-👉 Download Power BI Dashboard (.pbix)
+👉 [Download Power BI Dashboard.(pbix)]
 
 ## 🏆 Project Outcomes
 
